@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo 'this is deploying the code'
                 sh "docker compose down && docker compose up -d"
-                echo "deployment sucess!"
+                echo "deployment sucess! using scm"
             }
         }
     }
